@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio OSI</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="board dark">
+        <button class="switch-btn slide-top-inf">
+            <img src="img/moon-front-clay.png" alt="다크모드로 전환" class="switch-dark">
+            <img src="img/sun-front-premium.png" alt="라이트모드로 전환" class="switch-light">
+        </button>
+        <div class="container">
+            <div class="profile">
+                <div class="profile__icon">
+                    <img src="img/file-text-front-clay.png" alt="프로필아이콘" class="profile-light">
+                    <img src="img/file-text-front-premium.png" alt="프로필아이콘" class="profile-dark">
+                </div>
+                <div class="profile__title">
+                    <h2>Profile</h2>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__icon">
+                    <img src="img/folder-dynamic-clay.png" alt="폴더아이콘" class="project-light">
+                    <img src="img/folder-dynamic-premium.png" alt="폴더아이콘" class="project-dark">
+                </div>
+                <div class="project__title">
+                    <h2>Project</h2>
+                </div>
+            </div>
+        </div>
+        <div class="board-bg">
+            <div class="board-bg__profile">
+                <button class="close-btn slide-top-inf">
+                    <img src="img/close-front-clay.png" alt="닫기" class="close-light">
+                    <img src="img/close-front-premium.png" alt="닫기" class="close-dark">
+                </button>
+            </div>
+            <div class="board-bg__project on">
+                <button class="close-btn slide-top-inf">
+                    <img src="img/close-front-clay.png" alt="닫기" class="close-light">
+                    <img src="img/close-front-premium.png" alt="닫기" class="close-dark">
+                </button>
+            </div>
+        </div>
+        <div class="profile-board">
+            <div class="profile-board__top">
+                <div class="info-container">
+                    <div class="info-box tl">
+                        <div class="info-box__inner">
+                            <div class="info-box__title pr">
+                                <h2>Identity Information</h2>
+                            </div>
+                        </div>
+                        <div class="info-box__text">
+                            <ul>
+                                <li>
+                                    <span>Name</span>옥승일
+                                </li>
+                                <li>
+                                    <span>Birth</span>1991.11.10
+                                </li>
+                                <li>
+                                    <span>Mobile</span>+82 10 7461 5008
+                                </li>
+                                <li>
+                                    <span>E-mail</span>ockseungil91@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box t">
+                        <div class="info-box__inner">
+                            <div class="info-box__title pr">
+                                <h2>Education</h2>
+                            </div>
+                        </div>
+                        <div class="info-box__text edu">
+                            <ul>
+                                <li>
+                                    <span>2017.08</span>상명대학교 경영학과 졸업
+                                </li>
+                                <li>
+                                    <span>2022.2</span>브랜뉴디자인아카데미 수료
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="info-container">
+                    <div class="info-box t">
+                        <div class="info-box__inner">
+                            <div class="info-box__title">
+                                <h2>HTML</h2>
+                            </div>
+                            <div class="info-box__graphic">
+                                <div class="info-graphic">
+                                    <h2 data-num="90" class="info-graphic__value">90</h2>
+                                    <svg class="info-graphic__svg">
+                                        <circle cx="50%" cy="50%" r="35%" class="info-circle"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__contents">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    웹표준 준수
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    웹접근성 준수
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    시멘틱 마크업
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    반응형 마크업
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box tr">
+                        <div class="info-box__inner">
+                            <div class="info-box__title">
+                                <h2>CSS</h2>
+                            </div>
+                            <div class="info-box__graphic">
+                                <div class="info-graphic">
+                                    <h2 data-num="90" class="info-graphic__value">90</h2>
+                                    <svg class="info-graphic__svg">
+                                        <circle cx="50%" cy="50%" r="35%" class="info-circle"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__contents">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    컨텐츠 레이아웃
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    선택자를 활용한 다양한 효과 구현
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    미디어쿼리를 활용한 반응형 웹사이트
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    키프레임을 활용한 동적효과 구현
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-board__bottom">
+                <div class="info-container">
+                    <div class="info-box bl">
+                        <div class="info-box__inner">
+                            <div class="info-box__title">
+                                <h2>jQuery</h2>
+                            </div>
+                            <div class="info-box__graphic">
+                                <div class="info-graphic">
+                                    <h2 data-num="80" class="info-graphic__value">80</h2>
+                                    <svg class="info-graphic__svg">
+                                        <circle cx="50%" cy="50%" r="35%" class="info-circle"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__contents">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    click 이벤트
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    scroll 이벤트
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    mouse 이벤트
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    slide 이벤트
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    animate 이벤트
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box b">
+                        <div class="info-box__inner">
+                            <div class="info-box__title">
+                                <h2>Photoshop</h2>
+                            </div>
+                            <div class="info-box__graphic">
+                                <div class="info-graphic">
+                                    <h2 data-num="80" class="info-graphic__value">80</h2>
+                                    <svg class="info-graphic__svg">
+                                        <circle cx="50%" cy="50%" r="35%" class="info-circle"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__contents ps">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    레이어 활용
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    다양한 필터 활용
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    이미지 보정 및 편집
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-container">
+                    <div class="info-box b ">
+                        <div class="info-box__inner">
+                            <div class="info-box__title">
+                                <h2>Illustrator</h2>
+                            </div>
+                            <div class="info-box__graphic">
+                                <div class="info-graphic">
+                                    <h2 data-num="80" class="info-graphic__value">80</h2>
+                                    <svg class="info-graphic__svg">
+                                        <circle cx="50%" cy="50%" r="35%" class="info-circle"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__contents">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    펜, 선, 도형을 활용한 드로잉
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    오브젝트 변형 및 재구성
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    타이포그래피 디자인
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box br">
+                        <div class="info-box__inner">
+                            <div class="info-box__title">
+                                <h2>Figma</h2>
+                            </div>
+                            <div class="info-box__graphic">
+                                <div class="info-graphic">
+                                    <h2 data-num="70" class="info-graphic__value">70</h2>
+                                    <svg class="info-graphic__svg">
+                                        <circle cx="50%" cy="50%" r="35%" class="info-circle"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__contents ps">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    디자인 시안 제작
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/tick-front-clay.png" alt="체크표시" class="tick-light">
+                                        <img src="img/tick-front-premium.png" alt="체크표시" class="tick-dark">
+                                    </span>
+                                    그리드를 활용한 반응형 최적화 디자인
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-board">
+            <div class="project-container">
+                <div class="project-box volvo">
+                    <div class="project-box__img volvo"></div>
+                    <div class="project-box__info">
+                        <button class="description-btn">
+                            <img src="img/notebook-front-clay.png" alt="description 아이콘" class="description-light">
+                            <img src="img/notebook-front-premium.png" alt="description 아이콘" class="description-dark">
+                            Description
+                        </button>
+                        <a href="volvo/index.html" target="_blank" class="link-btn">
+                            <img src="img/link-front-clay.png" alt="웹사이트 링크 아이콘" class="link-light">
+                            <img src="img/link-front-premium.png" alt="웹사이트 링크 아이콘" class="link-dark">
+                            Volvo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-box sac">
+                    <div class="project-box__img sac"></div>
+                    <div class="project-box__info">
+                        <button class="description-btn">
+                            <img src="img/notebook-front-clay.png" alt="description 아이콘" class="description-light">
+                            <img src="img/notebook-front-premium.png" alt="description 아이콘" class="description-dark">
+                            Description
+                        </button>
+                        <a href="sac/index.html" target="_blank" class="link-btn">
+                            <img src="img/link-front-clay.png" alt="웹사이트 링크 아이콘" class="link-light">
+                            <img src="img/link-front-premium.png" alt="웹사이트 링크 아이콘" class="link-dark">
+                            예술의전당
+                        </a>
+                    </div>
+                </div>
+                <div class="project-box bp">
+                    <div class="project-box__img bp"></div>
+                    <div class="project-box__info">
+                        <button class="description-btn">
+                            <img src="img/notebook-front-clay.png" alt="description 아이콘" class="description-light">
+                            <img src="img/notebook-front-premium.png" alt="description 아이콘" class="description-dark">
+                            Description
+                        </button>
+                        <a href="blvck/index.html" target="_blank" class="link-btn">
+                            <img src="img/link-front-clay.png" alt="웹사이트 링크 아이콘" class="link-light">
+                            <img src="img/link-front-premium.png" alt="웹사이트 링크 아이콘" class="link-dark">
+                            BLVCK Paris
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-description">
+                <div class="volvo-des">
+                    <img src="img/volvo-des.jpg" alt="에술의전당 description">
+                </div>
+                <div class="sac-des">
+                    <img src="img/sac-des.jpg" alt="에술의전당 description">
+                </div>
+                <div class="bp-des">
+                    <img src="img/bp-des.jpg" alt="블랙파리스 description">
+                </div>
+            </div>
+            <div class="project-bg">
+                <button class="close-btn slide-top-inf">
+                    <img src="img/close-front-clay.png" alt="닫기" class="close-light">
+                    <img src="img/close-front-premium.png" alt="닫기" class="close-dark">
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
