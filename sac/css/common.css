@@ -1,0 +1,691 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body.on {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+  background-color: #001e36;
+  position: relative;
+  z-index: 99;
+}
+
+.header__inner {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* header의 top영역 */
+
+.header__top {
+  width: 100%;
+  height: 60px;
+}
+
+.header__utill {
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  float: right;
+}
+
+.search {
+  height: 25px;
+  float: right;
+}
+
+.search__input {
+  width: 180px;
+  height: 25px;
+  border-radius: 12.5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  margin-right: 6px;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #393664;
+  color: #fff;
+}
+
+.search__button {
+  width: 40px;
+  height: 25px;
+  border-radius: 5px;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer;
+  background-color: #393664;
+  color: #fff;
+}
+
+.auth {
+  width: 162px;
+  height: 25px;
+  float: right;
+  margin-left: 2.5rem;
+}
+
+.auth__login {
+  width: 70px;
+  height: 25px;
+  margin-right: 12px;
+  background-color: #D4896D;
+}
+
+.auth__signUp {
+  width: 80px;
+  height: 25px;
+  background-color: #398080;
+}
+
+.auth__login,
+.auth__signUp {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  color: #fff;
+  display: block;
+  border-radius: 12.5px;
+  float: left;
+  font-size: 0.875rem;
+  line-height: 25px;
+}
+
+.language {
+  width: 80px;
+  height: 25px;
+  float: right;
+  margin-left: 2.5rem;
+}
+
+.language__select {
+  width: 80px;
+  height: 25px;
+  border-radius: 12.5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  background-color: #393664;
+  color: #fff;
+}
+
+.language__select option {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.b-l_none {
+  border: none;
+  outline: none;
+}
+
+/* header의 bottom영역 */
+
+.header__bottom {
+  width: 100%;
+  height: 80px;
+}
+
+.header__btn--open,
+.header__btn--close,
+.header__btn--user {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__btn--open>img,
+.header__btn--close>img {
+  width: 30px;
+  display: block;
+}
+
+.header__btn--user>img {
+  width: 34px;
+  display: block;
+}
+
+.header__logo {
+  width: 15%;
+  min-width: 168px;
+  float: left;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logo__link {
+  display: block;
+  width: 100%;
+}
+
+.logo__link--img {
+  width: 100%;
+}
+
+.header__nav {
+  width: 74.5%;
+  height: 100%;
+  float: right;
+}
+
+.gnb {
+  width: 100%;
+  height: 100%;
+}
+
+.gnb__menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb__menu>li {
+  z-index: 12;
+  height: fit-content;
+  padding: 15px 0px 5px 0px;
+}
+
+.gnb__menu>li:hover {
+  border-bottom: 1px solid #D4896D;
+}
+
+.gnb__menu>li>a {
+  font-size: 1.125rem;
+}
+
+.gnb__menu>li>a:hover {
+  color: #D4896D;
+}
+
+.gnb__sub-menu {
+  z-index: 11;
+  position: absolute;
+  top: 140px;
+  width: fit-content;
+  height: 450px;
+  display: none;
+  box-sizing: border-box;
+}
+
+.gnb__sub-menu>li:first-child {
+  margin-top: 20px;
+}
+
+.gnb__sub-menu>li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.gnb__sub-menu>li>a {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.gnb__sub-menu>li:hover {
+  background-color: #386386;
+}
+
+.gnb__sub-menu--background {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  top: 140px;
+  left: 0;
+  background-color: #0D0427;
+  z-index: 10;
+  display: none;
+}
+
+/* footer 시작 */
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.footer__top {
+  width: 100%;
+  height: 50px;
+  background-color: #363155;
+}
+
+.footer__top-inner,
+.footer__bottom-inner {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin: 0 auto
+}
+
+.footer-links {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer sns 시작 */
+
+.footer-links__sns>ul {
+  float: left;
+}
+
+.footer-links__sns>ul:first-child {
+  margin-right: 25px;
+}
+
+.footer-links__sns>ul>li {
+  float: left;
+}
+
+.footer-links__sns>ul>li>a {
+  display: block;
+}
+
+.footer-links__sns>ul>li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer-links__sns--img {
+  width: 30px;
+}
+
+.footer-links__sns--img:hover {
+  transform: translateY(-5px);
+}
+
+/* footer 메뉴 시작 */
+
+.footer-links__menu>ul {
+  float: right;
+}
+
+.footer-links__menu--list {
+  float: left;
+}
+
+.footer-links__menu--list:first-child>a {
+  position: relative;
+  padding-right: 17px;
+}
+
+.footer-links__menu--list:nth-child(2)>a,
+.footer-links__menu--list:nth-child(3)>a,
+.footer-links__menu--list:nth-child(4)>a {
+  position: relative;
+  padding: 0 17px;
+}
+
+.footer-links__menu--list:last-child>a {
+  position: relative;
+  padding-left: 17px;
+}
+
+.footer-links__menu--list:not(:last-child)>a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 15px;
+  margin-top: -6.5px;
+  background-color: #fff;
+}
+
+.footer-links__menu--img {
+  margin-top: 3px;
+}
+
+.footer-links__menu--list>a:hover {
+  color: #65677e;
+}
+
+/* footer 하단 시작 */
+
+.footer__bottom {
+  width: 100%;
+  height: 150px;
+  background-color: #000426;
+  -webkit-text-fill-color: #fff;
+}
+
+.footer-info {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 15%;
+  min-width: 168px;
+
+}
+
+.footer-logo>img {
+  width: 100%;
+}
+
+.footer-contents {
+  font-size: 0.875rem;
+  width: 42.3%;
+}
+
+.footer-contents__address,
+.footer-contents__info {
+  margin-bottom: 6px;
+}
+
+.footer-customer {
+  width: fit-content;
+}
+
+.footer-customer__title {
+  font-size: 0.875rem;
+}
+
+.footer-customer__number {
+  font-size: 2rem;
+}
+
+.footer-customer__number>strong {
+  color: #fff;
+}
+
+.footer-customer__time {
+  font-size: 0.75rem;
+}
+
+
+.dp-on {
+  display: block;
+}
+
+.cdf {
+  color: #fff;
+  display: block;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.cf {
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.df {
+  display: block;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* 반응형 시작 */
+@media screen and (max-width:1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:1060px) {
+  .footer__top {
+    height: 100px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .footer-links__menu {
+    width: 100%;
+  }
+
+  .footer-links__menu>ul {
+    float: none;
+    width: 523px;
+    margin: 0 auto;
+  }
+
+  .footer-contents,
+  .footer-customer__title {
+    font-size: 0.75rem;
+  }
+
+  .footer-customer__time {
+    font-size: 0.625rem;
+  }
+
+  .footer-customer__number {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:960px) {
+  .gnb__sub-menu>li>a {
+    font-size: 0.75rem;
+  }
+
+  .gnb__sub-menu {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+
+  .header__inner,
+  .footer__top-inner,
+  .footer__bottom-inner {
+    padding: 0 24px;
+  }
+
+  .header__logo {
+    width: 23.333333333333%;
+    min-width: 96px;
+  }
+
+  .footer-logo {
+    width: 23.333333333333%;
+    min-width: 96px;
+  }
+
+  .header__nav {
+    width: 74.4444444444444%;
+  }
+
+
+
+}
+
+@media screen and (max-width:700px) {
+  html {
+    font-size: 12px;
+  }
+
+  .footer-links__menu>ul {
+    width: 482px;
+  }
+
+  .header {
+    height: 65.45px;
+  }
+
+  .header.mob {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .header__bottom {
+    height: 100%;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__mobile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 6px 20px;
+    box-sizing: border-box;
+  }
+
+  .header__btn--open,
+  .header__btn--user {
+    display: block;
+  }
+
+  .header__logo {
+    float: none;
+  }
+
+  .header__nav {
+    width: 100%;
+    height: calc(100vh - 65.45px);
+    background-color: #0D0427;
+    left: -700px;
+    top: 65.45px;
+    float: none;
+    position: fixed;
+    z-index: 99;
+    overflow: auto;
+  }
+
+  .header__inner {
+    padding: 0px;
+  }
+
+  .gnb__menu {
+    display: block;
+  }
+
+  .gnb__menu>li {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .gnb__menu>li>a {
+    padding: 20px 30px;
+    font-size: 1.25rem;
+  }
+
+  .gnb__sub-menu--background {
+    display: none;
+  }
+
+  .gnb__sub-menu {
+    width: 100%;
+    position: static;
+    height: auto;
+    background-color: #000;
+  }
+
+  .gnb__sub-menu>li:first-child {
+    margin-top: 0px;
+  }
+  
+  .gnb__sub-menu>li:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .gnb__sub-menu>li>a {
+    padding: 20px 30px;
+    display: block;
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .footer-info {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer-contents {
+    width: fit-content;
+  }
+
+  .footer-customer {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-customer__title {
+    margin-right: 10px;
+  }
+
+  .footer-customer__number {
+    margin-right: 10px;
+  }
+
+  .footer-links__sns>ul {
+    float: none;
+  }
+
+  .footer-links__sns>ul:first-child {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .footer-links__sns--img {
+    width: 50px;
+  }
+
+  .footer-links__menu>ul {
+    width: 243px;
+  }
+
+  .footer-links__menu--list:nth-child(1),
+  .footer-links__menu--list:nth-child(2),
+  .footer-links__menu--list:nth-child(3) {
+    margin-bottom: 10px;
+  }
+
+  .footer__top {
+    height: 240px;
+  }
+}

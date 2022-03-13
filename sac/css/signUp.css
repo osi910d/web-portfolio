@@ -1,0 +1,1385 @@
+.main {
+  width: 100%;
+  height: auto;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 271px;
+  background: url('../img/login/banner.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.banner__inner {
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.banner__text {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.banner__title {
+  width: 100%;
+  margin-top: 130px;
+  float: left;
+  font-size: 2rem;
+}
+
+.banner-link {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+.banner-link>li {
+  float: left;
+}
+
+.banner-link>li>a {
+  font-size: 0.75rem;
+}
+
+.banner-link>li:first-child>a {
+  position: relative;
+  padding-right: 17px;
+}
+
+.banner-link>li:nth-child(2)>a {
+  position: relative;
+  padding: 0 17px;
+}
+
+.banner-link>li:last-child>a {
+  position: relative;
+  padding-left: 17px;
+}
+
+.banner-link>li:not(:last-child)>a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 10px;
+  margin-top: -4px;
+  background-color: #fff;
+}
+
+.banner-link>li>a:hover {
+  color: rgb(255, 131, 131);
+  text-decoration: overline;
+  text-decoration-color: rgb(255, 131, 131);
+}
+
+.main__inner {
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.main__container {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 100px auto;
+}
+
+.signUp-title {
+  width: 83%;
+  text-align: center;
+  margin: 0 auto 80px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.signUp-title>img {
+  margin-bottom: 30px;
+}
+
+.signUp-title>h2 {
+  margin-bottom: 20px;
+}
+
+.signUp-title>p {
+  line-height: 25px;
+}
+
+.signUp {
+  width: 100%;
+  height: auto;
+}
+
+.signUp-free,
+.signUp-charged {
+  width: 83%;
+  height: auto;
+  margin: 0 auto 60px auto;
+}
+
+.signUp-free__title,
+.signUp-charged__title {
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 40px;
+  width: fit-content;
+}
+
+.signUp-free__title::after,
+.signUp-charged__title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #ed1839;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.signUp-free__box,
+.signUp-charged__box {
+  width: 100%;
+  height: 140px;
+  margin: 0 auto 20px auto;
+  background-color: #ffeeee;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 0 24px;
+}
+
+.signUp-free__box:hover,
+.signUp-charged__box:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.signUp-free__box--titleWrap>img {
+  margin-right: 24px;
+  float: left;
+  margin-top: 31px;
+}
+
+.signUp-charged__box--titleWrap>img {
+  float: left;
+  height: 78px;
+  margin: 31px 24px 0px 0px;
+}
+
+.signUp-free__box--titleWrap,
+.signUp-charged__box--titleWrap {
+  float: left;
+}
+
+.signUp-free__box--title {
+  width: 104px;
+  float: left;
+  margin-top: 33.5px;
+}
+
+.signUp-charged__box--title {
+  width: 120px;
+  float: left;
+  margin-top: 33.5px;
+}
+
+.signUp-free__box--title>p:first-child,
+.signUp-charged__box--title>p:first-child {
+  padding: 5px 13px;
+  width: fit-content;
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+}
+
+.free-normal>p:first-child {
+  background-color: #ed1839;
+}
+
+.free-sac>p:first-child {
+  background-color: #5F8E44;
+}
+
+.free-noble>p:first-child {
+  background-color: #655B30;
+}
+
+.charged-green>p:first-child {
+  background-color: #00883E;
+}
+
+.charged-blue>p:first-child {
+  background-color: #003E9D;
+}
+
+.charged-gold>p:first-child {
+  background-color: #DC9C00;
+}
+
+.charged-enterprise>p:first-child {
+  background-color: #2c2c2c;
+}
+
+.col-line {
+  width: 1px;
+  height: 100px;
+  background-color: #ffcccc;
+  margin: 20px 10px 0px 10px;
+  float: left;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: #ff9f9f;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 70px;
+  margin-right: 24px;
+  margin-top: 35px;
+  float: left;
+}
+
+.circle>p {
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+}
+
+.signUp-free__box--list,
+.signUp-charged__box--list {
+  float: left;
+  margin-top: 34px;
+  margin-right: 20px;
+}
+
+.sac-list {
+  color: #5F8E44;
+}
+
+.noble-list>li {
+  color: #655B30;
+}
+
+.signUp-charged__linkWrap {
+  width: fit-content;
+  float: right;
+}
+
+.signUp-link,
+.signUp-benefit {
+  width: 80px;
+  height: 80px;
+  float: right;
+  border-radius: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.signUp-charged__linkWrap .signUp-link,
+.signUp-charged__linkWrap .signUp-benefit {
+  float: left;
+}
+
+.signUp-benefit {
+  margin-right: 24px;
+  cursor: pointer;
+  background-color: #ff9f9f;
+}
+
+.normal-link {
+  background-color: #ed1839;
+}
+
+.sac-link {
+  background-color: #5F8E44;
+}
+
+.noble-link {
+  background-color: #655B30;
+}
+
+.green-link {
+  background-color: #00883E;
+}
+
+.blue-link {
+  background-color: #003E9D;
+}
+
+.gold-link {
+  background-color: #DC9C00;
+}
+
+.enterprise-link {
+  background-color: #2c2c2c;
+}
+
+.signUp-banner {
+  width: 83%;
+  height: auto;
+  background-color: #f0f0c8;
+  margin: 0 auto 60px auto;
+  border-radius: 10px;
+}
+
+.signUp-banner__left {
+  width: 60%;
+  height: auto;
+  padding: 50px 0px 45px 50px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.signUp-banner__title {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 40px;
+}
+
+.signUp-banner__title>p>span {
+  font-weight: 500;
+  font-size: 1.75rem;
+  position: relative;
+}
+
+.signUp-banner__title>p>span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 29.2%;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.signUp-banner__benefit>li {
+  font-size: 1.125rem;
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.signUp-banner__benefit>li::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 3px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+}
+
+.signUp-banner__right {
+  width: 40%;
+  height: auto;
+  padding: 50px 50px 45px 0px;
+  box-sizing: border-box;
+  float: right;
+}
+
+.signUp-banner__right>img {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.signUp-banner__purchase {
+  width: 100%;
+  height: auto;
+}
+
+.signUp-banner__purchase--box {
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.signUp-banner__purchase--box:first-child {
+  margin-bottom: 20px;
+}
+
+.signUp-banner__purchase--box>h4 {
+  margin-bottom: 5px;
+}
+
+.signUp-banner__purchase--box>p {
+  font-size: 0.875rem;
+}
+
+.signUp-banner__purchase--box>p:last-child {
+  position: relative;
+  margin-left: 17px;
+  margin-top: 8px;
+}
+
+.signUp-banner__purchase--box>p:last-child::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #000;
+  border-bottom: 6px solid transparent;
+  top: 50%;
+  left: -17px;
+  transform: translateY(-50%);
+}
+
+.signUp-banner__purchase--box:last-child>p:last-child::before {
+  top: 27%;
+}
+
+.signUp-kakao {
+  width: 83%;
+  height: auto;
+  background-color: #f9e000;
+  margin: 0 auto 60px auto;
+  border-radius: 10px;
+}
+
+.signUp-kakao__box {
+  width: 100%;
+  height: 400px;
+  padding: 50px 0px 0px 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.signUp-kakao__title {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 40px;
+}
+
+.signUp-kakao__title>p {
+  float: left;
+}
+
+.signUp-kakao__title>p>span {
+  font-weight: 500;
+  font-size: 1.75rem;
+  position: relative;
+}
+
+.signUp-kakao__title>p>span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 39%;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.signUp-kakao__title>img {
+  float: left;
+  width: 20%;
+  margin-left: 4%;
+}
+
+.signUp-kakao__step>li {
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+}
+
+.signUp-kakao__box>img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.signUp-unionPay {
+  width: 83%;
+  height: auto;
+  background-color: #f8f9fa;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.signUp-unionPay__box {
+  width: 100%;
+  height: auto;
+  padding: 50px 50px 50px 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.signUp-unionPay__title {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.signUp-unionPay__title>p {
+  float: left;
+}
+
+.signUp-unionPay__title>p>span {
+  font-weight: 500;
+  font-size: 1.75rem;
+  position: relative;
+}
+
+.signUp-unionPay__title>p>span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 39%;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.signUp-unionPay__benefit>li {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.signUp-unionPay__benefit>li:nth-child(2) {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.signUp-unionPay__benefit>li:not(:last-child) {
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.signUp-unionPay__benefit>li>img {
+  float: left;
+  margin-right: 20px;
+}
+
+.signUp-unionPay__benefit--box {
+  float: left;
+  margin-top: 5px;
+}
+
+.signUp-unionPay__benefit--box>p:first-child {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+.signUp-unionPay__benefit--box>p:first-child>span {
+  color: #ed1839;
+}
+
+.signUp-unionPay__logo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 18%;
+}
+
+.benefit-popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.benefit-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 792px;
+  background-color: #fff;
+  z-index: 9999;
+  display: none;
+}
+
+.benefit-popup.on,
+.benefit-popup-bg.on {
+  display: block;
+}
+
+.benefit-popup__inner {
+  width: 100%;
+}
+
+.benefit-popup__title {
+  padding: 20px;
+  background-color: #ffe3e3;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefit-popup__title>h3 {
+  font-size: 1.5rem;
+}
+
+.benefit-popup-close {
+  width: 4%;
+  cursor: pointer;
+}
+
+.benefit-popup-close:hover {
+  transform: scale(1.1);
+}
+
+.benefit-member-nav {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.benefit-store-nav {
+  width: 100%;
+}
+
+.benefit-member-nav>li,
+.benefit-store-nav>li {
+  float: left;
+  width: 17%;
+  height: 35px;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.benefit-member-nav>li:nth-child(1) {
+  background-color: #00883E;
+  border: 2px solid #00883e;
+}
+
+.benefit-member-nav>li:nth-child(2) {
+  background-color: #003E9D;
+  border: 2px solid #003E9D;
+}
+
+.benefit-member-nav>li:nth-child(3) {
+  background-color: #DC9C00;
+  border: 2px solid #DC9C00;
+}
+
+.benefit-member-nav>li:nth-child(4) {
+  background-color: #2c2c2c;
+  border: 2px solid #2c2c2c;
+}
+
+.benefit-store-nav>li:nth-child(1) {
+  background-color: #ff6f6f;
+  border: 2px solid #ff6f6f;
+}
+
+.benefit-store-nav>li:nth-child(2) {
+  background-color: #896fff;
+  border: 2px solid #896fff;
+}
+
+.benefit-member-box {
+  width: 100%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+.benefit-member-title {
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dadada;
+}
+
+.benefit-store-title,
+.benefit-compare-title {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.benefit-member-title__box,
+.benefit-store-title__box,
+.benefit-compare-title__box {
+  width: 100%;
+}
+
+.benefit-member-title__box>img {
+  width: 20%;
+  float: left;
+  margin-right: 20px;
+}
+
+.benefit-store-title__box>img,
+.benefit-compare-title__box>img {
+  float: left;
+  margin-right: 20px;
+  width: 13%;
+}
+
+.benefit-member-title__box>p:nth-child(2) {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.benefit-store-title__box--text,
+.benefit-compare-title__box--text {
+  float: left;
+}
+
+.benefit-store-title__box--text>p:nth-child(1),
+.benefit-compare-title__box--text>p:nth-child(1) {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 1%;
+}
+
+.benefit-member-title__box>p:nth-child(2)>span {
+  color: #ed1839;
+}
+
+.benefit-member-title__box>p:nth-child(4) {
+  margin-top: 3px;
+}
+
+.benefit-list-wrap,
+.store-list-wrap,
+.shopping-list-wrap {
+  width: 100%;
+}
+
+.benefit-list>li,
+.store-list>li,
+.shopping-list>li {
+  padding: 20px 0px;
+  border-bottom: 1px solid #dadada;
+  width: 100%;
+}
+
+.benefit-list>li>img {
+  float: left;
+  margin-right: 20px;
+  width: 12%;
+}
+
+.store-list>li>img,
+.shopping-list>li>img {
+  float: left;
+  margin-right: 20px;
+  width: 45%;
+}
+
+.benefit-list__text {
+  margin-top: 0.5%;
+  width: 80%;
+  float: left;
+}
+
+.benefit-list__text>li:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.benefit-list__text>li:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+.benefit-list__text>li:not(:first-child) {
+  font-size: 1.125rem;
+  color: rgb(85, 85, 85);
+}
+
+.store-list__text,
+.shopping-list__text {
+  float: right;
+  width: 48%;
+}
+
+.store-list__text>h3,
+.shopping-list__text>h3 {
+  font-size: 1.75rem;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #ff9f9f;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.store-list__call,
+.shopping-list__call {
+  margin-bottom: 20px;
+}
+
+.store-list__call>img,
+.store-list__discount>img,
+.shopping-list__call>img,
+.shopping-list__discount>img {
+  float: left;
+  width: 12%;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.store-list__call>p,
+.shopping-list__call>p {
+  color: rgb(85, 85, 85);
+  float: left;
+  width: 80%;
+}
+
+.store-list__call>p>span,
+.shopping-list__call>p>span {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.store-list__discount>p,
+.shopping-list__discount>p {
+  font-size: 1.125rem;
+  float: left;
+  margin-top: 3%;
+  width: 80%;
+}
+
+.benefit-compare-wrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 40px;
+}
+
+.benefit-compare-box__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.benefit-compare-box__title>img {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.benefit-compare-box__title>p>span {
+  font-size: 1.5rem;
+}
+
+.benefit-compare-box__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 100px;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.benefit-compare-box__grid-item {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(250, 250, 250);
+}
+
+.benefit-compare-box__grid-item>div {
+  width: 60px;
+  height: 100%;
+  border-radius: 100%;
+  margin-right: 20px;
+  background-position: center center;
+}
+
+.benefit-compare-box__grid-item>p {
+  width: 75%;
+}
+
+.benefit-compare-box__grid-item:nth-child(1)>div {
+  background-image: url('../img/signUp/ship_need1.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(2)>div {
+  background-image: url('../img/signUp/ship_need2.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(3)>div {
+  background-image: url('../img/signUp/ship_need3.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(4)>div {
+  background-image: url('../img/signUp/ship_need4.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(5)>div {
+  background-image: url('../img/signUp/ship_need5.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(6)>div {
+  background-image: url('../img/signUp/ship_need6.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(7)>div {
+  background-image: url('../img/signUp/ship_need7.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(8)>div {
+  background-image: url('../img/signUp/ship_need8.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(9)>div {
+  background-image: url('../img/signUp/ship_need9.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(10)>div {
+  background-image: url('../img/signUp/ship_need10.png');
+}
+
+.benefit-compare-box__grid-item:nth-child(11)>div {
+  background-image: url('../img/signUp/ship_need11.png');
+}
+
+.green-gi .benefit-compare-box__grid-item:nth-child(1)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(3)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(6)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(7)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(8)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(1)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(3)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(4)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(5)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(6)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(7)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(8)>div,
+.gold-gi .benefit-compare-box__grid-item:not(:nth-child(2))>div,
+.enterprise-gi .benefit-compare-box__grid-item>div {
+  background-color: #ff8888;
+}
+
+.green-gi .benefit-compare-box__grid-item:nth-child(2)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(4)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(5)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(9)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(10)>div,
+.green-gi .benefit-compare-box__grid-item:nth-child(11)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(2)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(9)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(10)>div,
+.blue-gi .benefit-compare-box__grid-item:nth-child(11)>div,
+.gold-gi .benefit-compare-box__grid-item:nth-child(2)>div {
+  background-color: #dddddd;
+}
+
+.green-gi .benefit-compare-box__grid-item:nth-child(2)>p,
+.green-gi .benefit-compare-box__grid-item:nth-child(4)>p,
+.green-gi .benefit-compare-box__grid-item:nth-child(5)>p,
+.green-gi .benefit-compare-box__grid-item:nth-child(9)>p,
+.green-gi .benefit-compare-box__grid-item:nth-child(10)>p,
+.green-gi .benefit-compare-box__grid-item:nth-child(11)>p,
+.blue-gi .benefit-compare-box__grid-item:nth-child(2)>p,
+.blue-gi .benefit-compare-box__grid-item:nth-child(9)>p,
+.blue-gi .benefit-compare-box__grid-item:nth-child(10)>p,
+.blue-gi .benefit-compare-box__grid-item:nth-child(11)>p,
+.gold-gi .benefit-compare-box__grid-item:nth-child(2)>p {
+  color: #dddddd;
+}
+
+.gold-list>li>a>img {
+  width: 60%;
+}
+
+.enterprise-list>li:nth-child(2),
+.enterprise-list>li:nth-child(3) {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.enterprise-list>li>a {
+  display: block;
+  padding: 10px;
+  background-color: #d7ddff;
+  width: fit-content;
+  border-radius: 7px;
+  float: left;
+}
+
+.enterprise-list>li>p {
+  float: left;
+  padding: 10px;
+}
+
+.enterprise-list>li>a>img {
+  height: 15px;
+  margin-right: 2px;
+
+}
+
+.member-link {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.member-link>a {
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-size: 1.25rem;
+}
+
+.member-link>a:nth-child(1) {
+  margin-right: 40px;
+}
+
+.member-link>a:nth-child(1) {
+  background-color: #7e80ff;
+}
+
+.member-link>a:nth-child(2) {
+  background-color: #ff8181;
+}
+
+.member-link>a:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.benefit-green.on,
+.benefit-blue.on,
+.benefit-gold.on,
+.benefit-enterprise.on {
+  display: block;
+}
+
+.benefit-member-nav .nav-green.on,
+.benefit-member-nav .nav-blue.on,
+.benefit-member-nav .nav-gold.on,
+.benefit-member-nav .nav-enterprise.on,
+.benefit-store-nav .nav-store.on,
+.benefit-store-nav .nav-shopping.on {
+  background-color: #fff;
+  color: #000;
+  border-bottom-color: #fff;
+}
+
+.store-list-wrap.on,
+.shopping-list-wrap.on {
+  display: block;
+} 
+
+.store-list-wrap,
+.shopping-list-wrap {
+  display: none;
+}
+
+.benefit-green,
+.benefit-blue,
+.benefit-gold,
+.benefit-enterprise {
+  display: none;
+}
+
+/* 반응형 시작 */
+
+@media screen and (max-width:1300px) {
+
+  .signUp-free__box:nth-child(3),
+  .signUp-free__box:nth-child(4) {
+    height: auto;
+  }
+
+  .signUp-free__box:nth-child(3) .signUp-free__box--list,
+  .signUp-free__box:nth-child(4) .signUp-free__box--list {
+    margin-top: 15px;
+    margin-right: 0;
+    float: none;
+  }
+
+  .sac-link,
+  .noble-link {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .signUp-free__list-wrap {
+    width: fit-content;
+    float: left;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .signUp-free__box .circle {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1010px) {
+  .signUp-charged__box .circle {
+    display: none;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .signUp-unionPay__benefit>li>img {
+    display: none;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .signUp-charged__box--list {
+    display: none;
+  }
+
+  .sac-list>li,
+  .noble-list>li {
+    font-size: 10px;
+  }
+
+  .signUp-banner__left {
+    width: 100%;
+    padding: 50px 50px 15px 50px;
+  }
+
+  .signUp-banner__right {
+    width: 100%;
+    padding: 15px 50px 45px 50px;
+    float: left;
+  }
+
+  .signUp-banner__right>img {
+    width: 50%;
+  }
+
+  .signUp-banner__purchase--box {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .signUp-free .signUp-free__box {
+    height: 300px;
+  }
+
+  .signUp-charged .signUp-charged__box {
+    height: 340px;
+  }
+
+  .signUp-free__box--titleWrap,
+  .signUp-charged__box--titleWrap {
+    width: fit-content;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .signUp-free__box--title {
+    width: fit-content;
+  }
+
+  .col-line {
+    width: 90%;
+    height: 1px;
+    float: none;
+    margin: 20px auto;
+  }
+
+  .signUp-free__list-wrap {
+    margin-left: 5%;
+    padding-bottom: 0px;
+  }
+
+  .signUp-charged__linkWrap {
+    margin-right: 5%;
+  }
+
+  .signUp-charged__box--list {
+    display: block;
+    margin-left: 5%;
+  }
+
+  .signUp-charged__box--titleWrap>img {
+    float: none;
+    margin: 20px auto 10px auto;
+  }
+
+  .signUp-charged__box--title {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .signUp-charged__box--title>p:first-child {
+    margin: 0 auto 10px auto;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .benefit-compare-box__grid {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .signUp-banner__title>p {
+    font-size: 10px;
+  }
+
+  .signUp-banner__title>p>span {
+    font-size: 1.5rem;
+  }
+
+  .signUp-banner__left {
+    width: 100%;
+    padding: 28px 28px 15px 28px;
+  }
+
+  .signUp-banner__right {
+    width: 100%;
+    padding: 15px 28px 28px 28px;
+    float: left;
+  }
+
+  .signUp-kakao__box {
+    padding: 28px 0px 0px 28px;
+  }
+
+  .signUp-kakao__box>img {
+    width: 70%;
+  }
+
+  .signUp-unionPay__box {
+    padding: 28px;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .signUp-charged__box--list {
+    float: none;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .signUp-charged__box .signUp-link {
+    margin-right: 0;
+  }
+
+  .signUp-charged__box--title {
+    width: fit-content;
+  }
+
+  .signUp-charged__linkWrap {
+    width: 70%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .signUp-charged__linkWrap .signUp-benefit {
+    width: 45%;
+    margin-right: 0;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .signUp-charged__linkWrap .signUp-link {
+    width: 45%;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .signUp-free .signUp-free__box {
+    height: 340px;
+  }
+
+
+  .signUp-free__list-wrap {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .signUp-free__box .signUp-link {
+    display: block;
+    margin: 25px auto;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    float: none;
+  }
+
+  .signUp-free__box:nth-child(2) .signUp-free__box--list {
+    float: none;
+    margin: 45px auto;
+  }
+
+  .signUp-banner__title>p {
+    font-size: 10px;
+  }
+
+  .signUp-banner__title>p>span {
+    font-size: 1.25rem;
+  }
+
+  .signUp-kakao__title>p,
+  .signUp-unionPay__title>p {
+    font-size: 10px;
+  }
+
+  .signUp-kakao__title>p>span,
+  .signUp-unionPay__title>p>span {
+    font-size: 1.5rem;
+  }
+
+  .signUp-free,
+  .signUp-charged,
+  .signUp-banner,
+  .signUp-kakao,
+  .signUp-unionPay,
+  .signUp-title {
+    width: 100%;
+  }
+
+  .signUp-title>p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .member-link>a:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  .benefit-popup-close {
+    width: 7%;
+    cursor: pointer;
+  }
+}

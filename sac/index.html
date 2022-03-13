@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>예술의전당</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="icon" href="img/header/logo_title.png">
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/common.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__container">
+        <div class="header__top">
+          <div class="header__utill">
+            <div class="language">
+              <select class="language__select b-l_none">
+                <option value="01" selected>KOR</option>
+                <option value="02">ENG</option>
+              </select>
+            </div>
+            <div class="auth">
+              <a href="login.html" class="auth__login">로그인</a>
+              <a href="signUp.html" class="auth__signUp">회원가입</a>
+            </div>
+            <form class="search">
+              <input type="text" class="search__input b-l_none">
+              <input type="submit" class="search__button b-l_none" value="검색">
+            </form>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__mobile">
+            <button class="header__btn--open b-l_none">
+              <img src="img/header/open-menu.png" alt="메뉴버튼">
+            </button>
+            <button class="header__btn--close b-l_none">
+              <img src="img/header/close-menu.png" alt="메뉴버튼">
+            </button>
+            <div class="header__logo">
+              <div class="logo"><a href="index.html" class="logo__link"><img src="img/header/logo_SAC.png" alt="로고"
+                    class="logo__link--img"></a></div>
+            </div>
+            <a href="login.html" class="header__btn--user">
+              <img src="img/main/quick-link/user.png" alt="마이페이지버튼">
+            </a>
+          </div>
+          <div class="header__nav">
+            <nav class="gnb">
+              <ul class="gnb__menu">
+                <li><a href="#" class="cdf">공연&middot;전시</a>
+                  <ul class="gnb__sub-menu">
+                    <li><a href="calander.html">전체일정(달력)</a></li>
+                    <li><a href="#">오늘의 공연&middot;전시</a></li>
+                    <li><a href="#">진행/예정 프로그램</a></li>
+                    <li><a href="#">SAC기획 공연&middot;전시</a></li>
+                    <li><a href="#">패키지</a></li>
+                    <li><a href="#">티켓오픈공지</a></li>
+                    <li><a href="#">싹(SAC) 딜</a></li>
+                    <li><a href="#">당일할인티켓</a></li>
+                    <li><a href="#">예매취소/안내</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="cdf">이용안내</a>
+                  <ul class="gnb__sub-menu">
+                    <li><a href="#">대관안내</a></li>
+                    <li><a href="#">공간안내</a></li>
+                    <li><a href="#">입장권 운영안내</a></li>
+                    <li><a href="#">오시는 길/주차안내</a></li>
+                    <li><a href="#">입점매장</a></li>
+                    <li><a href="#">편의서비스</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="cdf">아카데미</a>
+                  <ul class="gnb__sub-menu">
+                    <li><a href="#">아카데미 안내</a></li>
+                    <li><a href="#">수강신청</a></li>
+                    <li><a href="#">아카데미 공지사항</a></li>
+                    <li><a href="#">아카데미 FAQ</a></li>
+                    <li><a href="#">오디션신청</a></li>
+                    <li><a href="#">나의강좌</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="cdf">소식&middot;참여</a>
+                  <ul class="gnb__sub-menu">
+                    <li><a href="#">뉴스&middot;소식</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">세계음악분수(선곡표)</a></li>
+                    <li><a href="#">관람평</a></li>
+                    <li><a href="#">관람예절</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="cdf">예술의전당</a>
+                  <ul class="gnb__sub-menu">
+                    <li><a href="#">예술의전당 소개</a></li>
+                    <li><a href="#">특별사업</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">후원하기</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="cdf">회원서비스</a>
+                  <ul class="gnb__sub-menu">
+                    <li><a href="signUp.html">회원가입</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">패스워드 찾기</a></li>
+                    <li><a href="#">유료회원 혜택안내</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="gnb__sub-menu--background"></div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__inner">
+      <div class="main__container">
+        <div class="main-banner">
+          <div class="main-banner__slider">
+            <div class="banner-slider">
+              <div class="banner-slider__board board-color_01">
+                <div class="banner-slider__contents">
+                  <div class="banner-slider__bookmark">
+                    <p class="banner-slider__bookmark--text cf">음악</p>
+                  </div>
+                  <div class="banner-slider__place">
+                    <img src="img/main/main-banner/place-marker.png" alt="위치아이콘" class="banner-slider__place--img">
+                    <p class="banner-slider__place--text cf">콘서트홀</p>
+                  </div>
+                  <div class="banner-slider__title">
+                    <h2 class="banner-slider__title--text cf">임동혁 데뷔 20주년 기념 리사이틀</h2>
+                  </div>
+                  <div class="banner-slider__date">
+                    <p class="banner-slider__date--text cf">2022.05.24(화) 19:30</p>
+                  </div>
+                  <a href="#" class="banner-slider__btn cdf">자세히 보기</a>
+                </div>
+                <a href="#" class="banner-slider__link">
+                  <img src="img/main/main-banner/performance-poster_001.jpg" alt="공연포스터" class="banner-slider__poster">
+                </a>
+              </div>
+            </div>
+            <div class="banner-slider">
+              <div class="banner-slider__board board-color_02">
+                <div class="banner-slider__contents">
+                  <div class="banner-slider__bookmark">
+                    <p class="banner-slider__bookmark--text cf">음악</p>
+                  </div>
+                  <div class="banner-slider__place">
+                    <img src="img/main/main-banner/place-marker.png" alt="위치아이콘" class="banner-slider__place--img">
+                    <p class="banner-slider__place--text cf">IBK 챔버홀</p>
+                  </div>
+                  <div class="banner-slider__title">
+                    <h2 class="banner-slider__title--text cf">Spring Baroque 2022 : 댄싱 바로크</h2>
+                  </div>
+                  <div class="banner-slider__date">
+                    <p class="banner-slider__date--text cf">2022.03.05(토) 20:00</p>
+                  </div>
+                  <a href="#" class="banner-slider__btn cdf">자세히 보기</a>
+                </div>
+                <a href="#" class="banner-slider__link">
+                  <img src="img/main/main-banner/performance-poster_002.jpg" alt="공연포스터" class="banner-slider__poster">
+                </a>
+              </div>
+            </div>
+            <div class="banner-slider">
+              <div class="banner-slider__board board-color_03">
+                <div class="banner-slider__contents">
+                  <div class="banner-slider__bookmark">
+                    <p class="banner-slider__bookmark--text cf">음악</p>
+                  </div>
+                  <div class="banner-slider__place">
+                    <img src="img/main/main-banner/place-marker.png" alt="위치아이콘" class="banner-slider__place--img">
+                    <p class="banner-slider__place--text cf">콘서트홀</p>
+                  </div>
+                  <div class="banner-slider__title">
+                    <h2 class="banner-slider__title--text cf">김지연의 8ight Seasons</h2>
+                  </div>
+                  <div class="banner-slider__date">
+                    <p class="banner-slider__date--text cf">2022.03.05(토) 17:00</p>
+                  </div>
+                  <a href="#" class="banner-slider__btn cdf">자세히 보기</a>
+                </div>
+                <a href="#" class="banner-slider__link">
+                  <img src="img/main/main-banner/performance-poster_003.jpg" alt="공연포스터" class="banner-slider__poster">
+                </a>
+              </div>
+            </div>
+            <div class="banner-slider">
+              <div class="banner-slider__board board-color_04">
+                <div class="banner-slider__contents">
+                  <div class="banner-slider__bookmark">
+                    <p class="banner-slider__bookmark--text cf">음악</p>
+                  </div>
+                  <div class="banner-slider__place">
+                    <img src="img/main/main-banner/place-marker.png" alt="위치아이콘" class="banner-slider__place--img">
+                    <p class="banner-slider__place--text cf">IBK 챔버홀</p>
+                  </div>
+                  <div class="banner-slider__title">
+                    <h2 class="banner-slider__title--text cf">코리안심포니 : 카르멘 판타지</h2>
+                  </div>
+                  <div class="banner-slider__date">
+                    <p class="banner-slider__date--text cf">2023.03.04(금) 19:30</p>
+                  </div>
+                  <a href="#" class="banner-slider__btn cdf">자세히 보기</a>
+                </div>
+                <a href="#" class="banner-slider__link">
+                  <img src="img/main/main-banner/performance-poster_004.jpg" alt="공연포스터" class="banner-slider__poster">
+                </a>
+              </div>
+            </div>
+            <div class="banner-slider">
+              <div class="banner-slider__board board-color_05">
+                <div class="banner-slider__contents">
+                  <div class="banner-slider__bookmark">
+                    <p class="banner-slider__bookmark--text cf">음악</p>
+                  </div>
+                  <div class="banner-slider__place">
+                    <img src="img/main/main-banner/place-marker.png" alt="위치아이콘" class="banner-slider__place--img">
+                    <p class="banner-slider__place--text cf">인춘아트홀</p>
+                  </div>
+                  <div class="banner-slider__title">
+                    <h2 class="banner-slider__title--text cf">벨루지아 콘서트</h2>
+                  </div>
+                  <div class="banner-slider__date">
+                    <p class="banner-slider__date--text cf">2022.03.17(목) 19:30</p>
+                  </div>
+                  <a href="#" class="banner-slider__btn cdf">자세히 보기</a>
+                </div>
+                <a href="#" class="banner-slider__link">
+                  <img src="img/main/main-banner/performance-poster_005.jpg" alt="공연포스터" class="banner-slider__poster">
+                </a>
+              </div>
+            </div>
+            <div class="banner-slider">
+              <div class="banner-slider__board board-color_06">
+                <div class="banner-slider__contents">
+                  <div class="banner-slider__bookmark">
+                    <p class="banner-slider__bookmark--text cf">전시</p>
+                  </div>
+                  <div class="banner-slider__place">
+                    <img src="img/main/main-banner/place-marker.png" alt="위치아이콘" class="banner-slider__place--img">
+                    <p class="banner-slider__place--text cf">한가람디자인미술관</p>
+                  </div>
+                  <div class="banner-slider__title">
+                    <h2 class="banner-slider__title--text cf">내맘쏙 모두의 그림책 전</h2>
+                  </div>
+                  <div class="banner-slider__date">
+                    <p class="banner-slider__date--text cf">~2022.03.27(일)</p>
+                  </div>
+                  <a href="#" class="banner-slider__btn cdf">자세히 보기</a>
+                </div>
+                <a href="#" class="banner-slider__link">
+                  <img src="img/main/main-banner/exhibition-poster_001.jpg" alt="공연포스터" class="banner-slider__poster">
+                </a>
+              </div>
+            </div>
+            <div class="banner-slider">
+              <div class="banner-slider__board board-color_07">
+                <div class="banner-slider__contents">
+                  <div class="banner-slider__bookmark">
+                    <p class="banner-slider__bookmark--text cf">음악</p>
+                  </div>
+                  <div class="banner-slider__place">
+                    <img src="img/main/main-banner/place-marker.png" alt="위치아이콘" class="banner-slider__place--img">
+                    <p class="banner-slider__place--text cf">IBK 챔버홀</p>
+                  </div>
+                  <div class="banner-slider__title">
+                    <h2 class="banner-slider__title--text cf">한국피아노학회 정기연주회</h2>
+                  </div>
+                  <div class="banner-slider__date">
+                    <p class="banner-slider__date--text cf">2022.03.02(수) 19:30</p>
+                  </div>
+                  <a href="#" class="banner-slider__btn cdf">자세히 보기</a>
+                </div>
+                <a href="#" class="banner-slider__link">
+                  <img src="img/main/main-banner/performance-poster_006.jpg" alt="공연포스터" class="banner-slider__poster">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="main-banner__nav">
+            <nav class="banner-nav">
+              <button class="banner-nav__btn--prev b-l_none">
+                <img src="img/main/main-banner/arrow-back.png" alt="이전 이동 화살표" class="banner-nav__btn--img">
+              </button>
+              <ul class="banner-nav__menu">
+                <li class="banner-nav__list">
+                  <img src="img/main/main-banner/performance-poster_001.jpg" alt="공연포스터" class="banner-nav__list--img">
+                </li>
+                <li class="banner-nav__list">
+                  <img src="img/main/main-banner/performance-poster_002.jpg" alt="공연포스터" class="banner-nav__list--img">
+                </li>
+                <li class="banner-nav__list">
+                  <img src="img/main/main-banner/performance-poster_003.jpg" alt="공연포스터" class="banner-nav__list--img">
+                </li>
+                <li class="banner-nav__list">
+                  <img src="img/main/main-banner/performance-poster_004.jpg" alt="공연포스터" class="banner-nav__list--img">
+                </li>
+                <li class="banner-nav__list">
+                  <img src="img/main/main-banner/performance-poster_005.jpg" alt="공연포스터" class="banner-nav__list--img">
+                </li>
+                <li class="banner-nav__list">
+                  <img src="img/main/main-banner/exhibition-poster_001.jpg" alt="전시포스터" class="banner-nav__list--img">
+                </li>
+                <li class="banner-nav__list">
+                  <img src="img/main/main-banner/performance-poster_006.jpg" alt="전시포스터" class="banner-nav__list--img">
+                </li>
+              </ul>
+              <button class="banner-nav__btn--next b-l_none">
+                <img src="img/main/main-banner/arrow-forward.png" alt="다음 이동 화살표" class="banner-nav__btn--img">
+              </button>
+            </nav>
+          </div>
+        </div>
+        <div class="sub-events">
+          <div class="sub-events__slider">
+            <div class="events-slider">
+              <div class="event-box">
+                <img src="img/main/sub-events/sub-event__01.jpg" alt="포스터">
+                <div class="event-box__text">
+                  <h2 class="cf">국립합창단 기획공연 위대한 합창 시리즈</h2>
+                  <p class="cf">03.02(수) 19:30</p>
+                  <p class="cf">콘서트홀</p>
+                </div>
+              </div>
+              <div class="event-box">
+                <img src="img/main/sub-events/sub-event__05.jpg" alt="포스터">
+                <div class="event-box__text">
+                  <h2 class="cf">신세계와 함께하는 2022 예술의전당 토요콘서트(3월)</h2>
+                  <p class="cf">03.29(토) 19:30</p>
+                  <p class="cf">콘서트홀</p>
+                </div>
+              </div>
+              <div class="event-box">
+                <img src="img/main/sub-events/sub-event__03.jpg" alt="포스터">
+                <div class="event-box__text">
+                  <h2 class="cf">어니스트 필하모닉 제6회 정기연주회</h2>
+                  <p class="cf">03.29(화) 19:30</p>
+                  <p class="cf">콘서트홀</p>
+                </div>
+              </div>
+              <div class="event-box">
+                <img src="img/main/sub-events/sub-event__04.jpg" alt="포스터">
+                <div class="event-box__text">
+                  <h2 class="cf">한화생명과 함께하는 예술의전당 11시 콘서트(3월)</h2>
+                  <p class="cf">03.11(목) 11:00</p>
+                  <p class="cf">콘서트홀</p>
+                </div>
+              </div>
+              <div class="event-box">
+                <img src="img/main/sub-events/sub-event__02.jpg" alt="포스터">
+                <div class="event-box__text">
+                  <h2 class="cf">[서화(온라인)] 화정 김무호의 &#60;사군자&#62;</h2>
+                  <p class="cf">01.11(화) 14:00~</p>
+                  <p class="cf">온라인</p>
+                </div>
+              </div>
+              <div class="event-box">
+                <img src="img/main/sub-events/sub-event__06.jpg" alt="포스터">
+                <div class="event-box__text">
+                  <h2 class="cf">[인문&#183;감상] 2022 봄정규 강좌</h2>
+                  <p class="cf">03.22(화)~06.08(수)</p>
+                  <p class="cf">컨퍼런스홀(오페라하우스 4F)</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="sub-events__nav">
+            <div class="events-nav">
+              <button class="events-nav__btn--prev b-l_none">
+                <img src="img/main/main-banner/arrow-back.png" alt="이전 이동 화살표" class="events-nav__btn--img">
+              </button>
+              <button class="events-nav__btn--next b-l_none">
+                <img src="img/main/main-banner/arrow-forward.png" alt="다음 이동 화살표" class="events-nav__btn--img">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-contents">
+          <div class="main-contents__top clearfix">
+            <div class="bulletin-board">
+              <div class="bulletin-board__btn">
+                <button class="notice-btn bulletin-btn b-l_none">공지사항</button>
+                <button class="ticket-btn bulletin-btn b-l_none">티켓오픈</button>
+                <a href="#" class="more-btn">더 보기</a>
+              </div>
+              <div class="bulletin-board__notice bulletin-bg">
+                <div class="notice-link">
+                  <p class="notice-link__box">
+                    <a href="#" class="cf">2022 예술의전당 교향악축제 작품 공모 결과 발표</a>
+                    <span>2021.12.30</span>
+                  </p>
+                  <p class="notice-link__box">
+                    <a href="#" class="cf">2022 예술의전당 오페라극장 수시대관(오프시즌) 공고</a>
+                    <span>2021.12.30</span>
+                  </p>
+                  <p class="notice-link__box">
+                    <a href="#" class="cf">2021 예술의전당 12월 청년미술상점 안내</a>
+                    <span>2021.12.22</span>
+                  </p>
+                  <p class="notice-link__box">
+                    <a href="#" class="cf">[개막연기] 뮤지컬 라이온 킹 인터내셔널 투어 - 서울> 개막 연기공지</a>
+                    <span>2021.12.21</span>
+                  </p>
+                  <p class="notice-link__box">
+                    <a href="#" class="cf">2021 예술의전당 국가안전대진단 점검 결과 공개</a>
+                    <span>2021.12.22</span>
+                  </p>
+                  <p class="notice-link__box">
+                    <a href="#" class="cf">방역패스 의무 적용(접종증명 - 음성확인제)에 따른 예술의전당 이용 안내</a>
+                    <span>2021.12.07</span>
+                  </p>
+                </div>
+              </div>
+              <div class="bulletin-board__ticket bulletin-bg">
+                <div class="ticket-link">
+                  <p class="ticket-link__box">
+                    <a href="#" class="cf">KBS교향악단 제774회 정기연주회</a>
+                    <span>티켓오픈일 2022.01.11</span>
+                  </p>
+                  <p class="ticket-link__box">
+                    <a href="#" class="cf">뮤지컬 라이온 킹 인터내셔널 투어 - 서울</a>
+                    <span>티켓오픈일 2022.01.06</span>
+                  </p>
+                  <p class="ticket-link__box">
+                    <a href="#" class="cf">랑랑 피아노 리사이틀</a>
+                    <span>티켓오픈일 2022.01.06</span>
+                  </p>
+                  <p class="ticket-link__box">
+                    <a href="#" class="cf">KT와 함꼐하는 예술의전당 마음을 담은 클래식(1월)</a>
+                    <span>티켓오픈일 2021.12.30</span>
+                  </p>
+                  <p class="ticket-link__box">
+                    <a href="#" class="cf">가곡으로 여는 첫 신년음악회, 2022 굿모닝 가곡</a>
+                    <span>티켓오픈일 2021.12.29</span>
+                  </p>
+                  <p class="ticket-link__box">
+                    <a href="#" class="cf">한화생명과 함께하는 예술의전당 11시 콘서트(1월)</a>
+                    <span>티켓오픈일 2021.12.29</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="quick-link">
+              <div class="quick-link__bg">
+                <div class="quick-link__boxwrap">
+                  <div class="quick-link__top">
+                  <div class="quick-link__box">
+                    <a href="#" class="cdf">
+                      <img src="img/main/quick-link/calendar.png" alt="전체일정" class="quick-link__img">
+                      <p>전체일정</p>
+                    </a>
+                  </div>
+                  <div class="quick-link__box">
+                    <a href="#" class="cdf">
+                      <img src="img/main/quick-link/car.png" alt="오시는길" class="quick-link__img">
+                      <p>오시는길/주차</p>
+                    </a>
+                  </div>
+                  <div class="quick-link__box">
+                    <a href="#" class="cdf">
+                      <img src="img/main/quick-link/customer.png" alt="고객센터" class="quick-link__img">
+                      <p>고객센터</p>
+                    </a>
+                  </div>
+                  </div>
+                  <div class="quick-link__bottom">
+                  <div class="quick-link__box">
+                    <a href="#" class="cdf">
+                      <img src="img/main/quick-link/hall.png" alt="공간안내" class="quick-link__img">
+                      <p>공간안내</p>
+                    </a>
+                  </div>
+                  <div class="quick-link__box">
+                    <a href="#" class="cdf">
+                      <img src="img/main/quick-link/donation.png" alt="예술기부" class="quick-link__img">
+                      <p>예술기부</p>
+                    </a>
+                  </div>
+                  <div class="quick-link__box">
+                    <a href="#" class="cdf">
+                      <img src="img/main/quick-link/user.png" alt="마이페이지" class="quick-link__img">
+                      <p>마이페이지</p>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-contents__bottom clearfix">
+            <div class="youtube-board">
+              <div class="youtube-board__title-bg">
+                <h3 class="youtube-board__title cf">Youtube</h3>
+              </div>
+              <div class="youtube-board__bg">
+                <div class="youtube-board__wrap">
+                  <div class="youtube-box clearfix">
+                    <a href="#">
+                      <img src="img/main/youtube-board/youtube-thumbnail_01.jpeg" alt="유튜브썸네일">
+                    </a>
+                    <div class="youtube-box__text">
+                      <img src="img/main/youtube-board/youtube-logo.png" alt="유튜브로고" class="youtube-box__logo">
+                      <a href="#" class="cf clearfix">
+                        <p>예술의전당 | 요즘 예술가를 만나다 | 소프라노 손지수</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="youtube-box clearfix">
+                    <a href="#">
+                      <img src="img/main/youtube-board/youtube-thumbnail_02.jpeg" alt="유튜브썸네일">
+                    </a>
+                    <div class="youtube-box__text">
+                      <img src="img/main/youtube-board/youtube-logo.png" alt="유튜브로고" class="youtube-box__logo">
+                      <a href="#" class="cf clearfix">
+                        <p>[직장인 브이로그] 예술의전당에 입사하려면 어떻게하죠? 한창 채용 진행 중인 인사관리부에서 알려주는 꿀팁! #쩐당로그 교육담당자의 하루</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="youtube-box clearfix">
+                    <a href="#">
+                      <img src="img/main/youtube-board/youtube-thumbnail_03.jpeg" alt="유튜브썸네일">
+                    </a>
+                    <div class="youtube-box__text">
+                      <img src="img/main/youtube-board/youtube-logo.png" alt="유튜브로고" class="youtube-box__logo">
+                      <a href="#" class="cf clearfix">
+                        <p>[예술의전당] 연말엔 고민하지 말고 예당으로 | 김대리가 읊어주는 12월 공연&middot;전시</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="youtube-box clearfix">
+                    <a href="#">
+                      <img src="img/main/youtube-board/youtube-thumbnail_04.jpeg" alt="유튜브썸네일">
+                    </a>
+                    <div class="youtube-box__text">
+                      <img src="img/main/youtube-board/youtube-logo.png" alt="유튜브로고" class="youtube-box__logo">
+                      <a href="#" class="cf clearfix">
+                        <p>예술의전당 | 요즘 예술가를 만나다 | 바이올리니스트 양인모 Meet the Young Artists_Violinist Inmo Yang</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="youtube-box clearfix">
+                    <a href="#">
+                      <img src="img/main/youtube-board/youtube-thumbnail_05.jpeg" alt="유튜브썸네일">
+                    </a>
+                    <div class="youtube-box__text">
+                      <img src="img/main/youtube-board/youtube-logo.png" alt="유튜브로고" class="youtube-box__logo">
+                      <a href="#" class="cf clearfix">
+                        <p>예술의전당을 위한 팡파레</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="youtube-box clearfix">
+                    <a href="#">
+                      <img src="img/main/youtube-board/youtube-thumbnail_06.jpeg" alt="유튜브썸네일">
+                    </a>
+                    <div class="youtube-box__text">
+                      <img src="img/main/youtube-board/youtube-logo.png" alt="유튜브로고" class="youtube-box__logo">
+                      <a href="#" class="cf clearfix">
+                        <p>[예술의전당] 단계적 일상회복, 단계적으로 공연전시도 함께보아요! 김대리가 읊어주는 11월 주요 공연&middot;전시</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-board">
+              <div class="news-board__title-bg">
+                <h3 class="news-board__title cf">알림</h3>
+              </div>
+              <div class="news-board__bg">
+                <div class="news">
+                  <div class="news__slider">
+                    <div class="news__contents clearfix">
+                      <div class="news-box">
+                        <a href="#" class="news-box__link">
+                          <img src="img/main/news-board/news_01.jpg" alt="알림이미지" class="news-box__img">
+                        </a>
+                        <div class="news-box__text">
+                          <h2 class="cf">청년 미술 상점</h2>
+                          <h5 class="cf">Young Artist’s Shop</h5>
+                          <p class="cf">예술의전당 한가람미술관 1층</p>
+                          <a href="#" class="cdf news-box__btn">자세히 보기</a>
+                        </div>
+                      </div>
+                      <div class="news-box">
+                        <a href="#" class="news-box__link">
+                          <img src="img/main/news-board/news_02.jpg" alt="알림이미지" class="news-box__img">
+                        </a>
+                        <div class="news-box__text">
+                          <h2 class="cf">예술의전당 이용 안내</h2>
+                          <p class="cf">방역패스 의무 적용<br />(접종증명&middot;음성확인제)</p>
+                          <a href="#" class="cdf news-box__btn">자세히 보기</a>
+                        </div>
+                      </div>
+                      <div class="news-box">
+                        <a href="#" class="news-box__link">
+                          <img src="img/main/news-board/news_03.jpg" alt="알림이미지" class="news-box__img">
+                        </a>
+                        <div class="news-box__text">
+                          <h2 class="cf">SAC 사이버 투어</h2>
+                          <h5 class="cf">SAC Cyber Tour</h5>
+                          <a href="#" class="cdf news-box__btn">자세히 보기</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <div class="footer-links">
+          <div class="footer-links__sns">
+            <ul class="clearfix">
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/facebook.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/twitter.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/instagram.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/blog.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+            </ul>
+            <ul class="clearfix">
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/post.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/naver_tv.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/youtube.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="img/main/footer/potcast.png" alt="SNS외부링크" class="footer-links__sns--img">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links__menu">
+            <ul class="clearfix">
+              <li class="footer-links__menu--list">
+                <a href="#" class="cf">사이트맵</a>
+              </li>
+              <li class="footer-links__menu--list">
+                <a href="#" class="cf">정보공개</a>
+              </li>
+              <li class="footer-links__menu--list">
+                <a href="#" class="cf">이용약관 정책</a>
+              </li>
+              <li class="footer-links__menu--list">
+                <a href="#" class="cf">개인정보처리방침</a>
+              </li>
+              <li class="footer-links__menu--list">
+                <a href="#" target="_blank"><img src="img/main/footer/nbns1_1.jpg" alt="문화체육관광부"
+                    class="footer-links__menu--img"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <img src="img/header/logo_SAC.png" alt="예술의전당 로고">
+          </div>
+
+          <div class="footer-contents">
+            <address class="cf footer-contents__address">(우) 06757 서울시 서초구 남부순환로 2406 예술의전당</address>
+            <p class="cf footer-contents__info">
+              대표자&nbsp;&nbsp;&nbsp;유인택&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;사업자등록번호&nbsp;&nbsp;&nbsp;214-82-00264&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;통신판매업신고&nbsp;&nbsp;&nbsp;서초
+              제 0706호</p>
+            <p class="cf">Copyright&nbsp;&copy;&nbsp;Seoul Arts Center All Rights Reserved</p>
+          </div>
+          <div class="footer-customer">
+            <p class="cf footer-customer__title">고객센터</p>
+            <p class="cf footer-customer__number"><strong>02-580-1300</strong></p>
+            <p class="cf footer-customer__time">(월 09:00~18:00/화~일 09:00~20:00)</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
