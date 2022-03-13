@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>볼보자동차코리아 | Volvo Cars - 대한민국</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/header/favicon.png">
+  <script src="js/jquery.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="models-box">
+        <span>Models</span>
+        <nav class="models-nav">
+          <button class="models-nav__close bo_n">
+            <img src="img/header/close.png" alt="close">
+          </button>
+          <div class="models-nav__inner">
+            <ul class="models-list">
+              <li class="on">SUV
+                <ul class="models-sub-list models-suv on">
+                  <li><span>Pure Electric</span>
+                    <ul class="models-car-list clearfix">
+                      <li>
+                        <a href="#">
+                          <img src="img/header/electric.png" alt="electric-icon" class="electric-icon">
+                          <span class="car-name">XC40 Recharge</span>
+                          <span class="car-price">KRW 66,300,000</span>
+                          <img src="img/header/xc40-electric.png" alt="xc40 recharge" class="car-img">
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><span>Plug-in Hybrids</span>
+                    <ul class="models-car-list clearfix">
+                      <li>
+                        <a href="#">
+                          <span class="car-name">XC90 Recharge</span>
+                          <span class="car-price">KRW 110,700,000</span>
+                          <img src="img/header/xc90-hybrid.png" alt="xc90 hybrid" class="car-img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="car-name">XC60 Recharge</span>
+                          <span class="car-price">KRW 83,700,000</span>
+                          <img src="img/header/xc60-hybrid.png" alt="xc60 hybrid" class="car-img">
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><span>Mild Hybrids</span>
+                    <ul class="models-car-list clearfix">
+                      <li>
+                        <a href="#">
+                          <span class="car-name">XC90</span>
+                          <span class="car-price">KRW 82,800,000</span>
+                          <img src="img/header/xc90.png" alt="xc90" class="car-img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="car-name">XC60</span>
+                          <span class="car-price">KRW 61,900,000</span>
+                          <img src="img/header/xc60.png" alt="xc60" class="car-img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="car-name">XC40</span>
+                          <span class="car-price">KRW 46,700,000</span>
+                          <img src="img/header/xc40.png" alt="xc40" class="car-img">
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>SEDAN
+                <ul class="models-sub-list models-sedan">
+                  <li><span>Plug-in Hybrids</span>
+                    <ul class="models-car-list clearfix">
+                      <li>
+                        <a href="#">
+                          <span class="car-name">S90 Recharge</span>
+                          <span class="car-price">KRW 85,400,000</span>
+                          <img src="img/header/s90-hybrid.png" alt="s90 hybrid" class="car-img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="car-name">S60 Recharge</span>
+                          <span class="car-price">KRW 57,100,000</span>
+                          <img src="img/header/s60-hybrid.png" alt="s60 hybrid" class="car-img">
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><span>Mild Hybrids</span>
+                    <ul class="models-car-list clearfix">
+                      <li>
+                        <a href="#">
+                          <span class="car-name">S90</span>
+                          <span class="car-price">KRW 61,500,000</span>
+                          <img src="img/header/s90.png" alt="s90" class="car-img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="car-name">S60</span>
+                          <span class="car-price">KRW 48,100,000</span>
+                          <img src="img/header/s60.png" alt="s60" class="car-img">
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>WAGON
+                <ul class="models-sub-list models-wagon">
+                  <li><span>Mild Hybrids</span>
+                    <ul class="models-car-list clearfix">
+                      <li>
+                        <a href="#">
+                          <span class="car-name">V90 Cross Country</span>
+                          <span class="car-price">KRW 69,500,000</span>
+                          <img src="img/header/v90-cross-country.png" alt="v90" class="car-img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="car-name">V60 Cross Country</span>
+                          <span class="car-price">KRW 53,300,000</span>
+                          <img src="img/header/v60-cross-country.png" alt="v60" class="car-img">
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>CROSSOVER
+                <ul class="models-sub-list models-crossover">
+                  <li><span>Pure Electric</span>
+                    <ul class="models-car-list clearfix">
+                      <li>
+                        <a href="details.html">
+                          <img src="img/header/electric.png" alt="electric-icon" class="electric-icon">
+                          <span class="car-name">C40 Recharge</span>
+                          <span class="car-price">KRW 63,910,000</span>
+                          <img src="img/header/c40-electric.png" alt="c40 recharge" class="car-img">
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="models-bg"></div>
+      </div>
+      <h1 class="logo">
+        <a href="index.html" class="logo__link">
+          <img src="img/header/volvo-logo-black.png" alt="logo">
+        </a>
+      </h1>
+      <ul class="util-list">
+        <li class="util-list__map">
+          <a href="#">
+            <img src="img/header/map_black.png" alt="location">
+          </a>
+        </li>
+        <li class="util-list__account">
+          <a href="#">
+            <img src="img/header/person_black.png" alt="account">
+          </a>
+        </li>
+        <li>
+          <img src="img/header/menu_black.png" alt="menu" class="menu-btn">
+          <nav class="gnb">
+            <div class="gnb__top-area">
+              <button class="gnb__prev-btn bo_n">
+                <img src="img/header/prev-arrow.png" alt="prev">
+              </button>
+              <span class="gnb-title"></span>
+              <img src="img/header/volvo-logo-black.png" alt="logo" class="gnb-logo on">
+              <button class="gnb__close-btn bo_n">
+                <img src="img/header/close.png" alt="close">
+              </button>
+            </div>
+            <div class="gnb-box">
+              <ul class="gnb-list">
+                <li class="gnb-link"><a href="#">Car Configurator</a></li>
+                <li class="gnb-item">
+                  <div class="gnb-item__box">
+                    <span class="gnb-item__title">Buy</span>
+                    <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                  </div>
+                  <nav class="gnb-sub">
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        PURCHASE
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">시승 신청</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">브로슈어 다운로드</a>
+                      </li>
+                    </ul>
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        EXPLORE
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Lifestyle Collection</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="gnb-link"><a href="#">Find A Dealer</a></li>
+                <li class="gnb-item">
+                  <div class="gnb-item__box">
+                    <span class="gnb-item__title">Service</span>
+                    <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                  </div>
+                  <nav class="gnb-sub">
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        OWNER INFO
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Volvo experience</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Service by Volvo</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">서비스 센터 안내</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">리콜 정보 및 대상차량 조회</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">지원</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">부품 가격 조회</a>
+                      </li>
+                    </ul>
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        OTHER INFO
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">타이어 에너지 효율 등급</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">주요부품 장착 및 탈거 방법</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">스마트폰 연결</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="gnb-link"><a href="#">Used</a></li>
+                <li class="gnb-item">
+                  <div class="gnb-item__box">
+                    <span class="gnb-item__title">About Volvo</span>
+                    <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                  </div>
+                  <nav class="gnb-sub">
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        ABOUT VOLVO
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">우리의 이야기</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">역사</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">세이프티</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">지속가능성</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">일렉트리피케이션</a>
+                      </li>
+                    </ul>
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        OUR COMPANY
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">채용</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">뉴스 & 이벤트</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">투자자 정보</a>
+                      </li>
+                    </ul>
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        MORE ABOUT VOLVO
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">뉴스레터 신청</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">전문 테크니션 양성 프로그램</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">기술교육 및 정비자료</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="gnb-item">
+                  <div class="gnb-item__box">
+                    <span class="gnb-item__title">More</span>
+                    <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                  </div>
+                  <nav class="gnb-sub">
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        MORE
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Company</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Careers</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Contact Us</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Investor Relations</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+              </ul>
+              <ul class="gnb-site">
+                <li class="gnb-item">
+                  <div class="gnb-item__box">
+                    <span class="gnb-site__title">Korea</span>
+                    <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                  </div>
+                  <nav class="gnb-sub">
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        INTERNATIONAL AND CORPORATE SITES
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Company</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Volvo Cars International</a>
+                      </li>
+                    </ul>
+                    <ul class="gnb-sub-list">
+                      <li class="sub-title">
+                        REGIONAL AND SPECIAL SALES SITES
+                      </li>
+                      <li class="sub-item">
+                        <div class="sub-item__box">
+                          <span class="sub-item__title">Americas</span>
+                          <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                        </div>
+                        <nav class="gnb-third">
+                          <ul class="gnb-sub-list">
+                            <li class="sub-item">
+                              <a href="#">Argentina</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Brazil</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Canada (English)</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Canada (Francais)</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Chile</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Colombia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Costa Rica</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Dominican Republic</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Ecuador</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Guatemala</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Mexico</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Panama</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Paraguay</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Peru</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Puerto Rico</a>
+                            </li>
+                          </ul>
+                          <ul class="gnb-sub-list">
+                            <li class="sub-item">
+                              <a href="#">United States (English)</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">United States (Spanish)</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Uruguay</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </li>
+                      <li class="sub-item">
+                        <div class="sub-item__box">
+                          <span class="sub-item__title">Middle East / Africa</span>
+                          <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                        </div>
+                        <nav class="gnb-third">
+                          <ul class="gnb-sub-list">
+                            <li class="sub-item">
+                              <a href="#">Angola</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Bahrain</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Botswana</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Egypt</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Israel</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Jordan</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Kenya</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Kuwait</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Lebanon</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Mauritius</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Morocco</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Mozambique</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Namibia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Oman</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Saudi Arabia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">South Africa</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Tunsia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">United Arab Emirates</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Zambia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Zimbabwe</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </li>
+                      <li class="sub-item">
+                        <div class="sub-item__box">
+                          <span class="sub-item__title">Asia / Pacific</span>
+                          <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                        </div>
+                        <nav class="gnb-third">
+                          <ul class="gnb-sub-list">
+                            <li class="sub-item">
+                              <a href="#">Australia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Cambodia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">China</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Hong Kong, China</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Taiwan, China</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">India</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Indonesia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Japan</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Korea</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Malaysia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Myanmar</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">New Zealand</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Philippines</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Singapore</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Sri Lanka</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Thailand</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Vietnam</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </li>
+                      <li class="sub-item">
+                        <div class="sub-item__box">
+                          <span class="sub-item__title">Europe</span>
+                          <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                        </div>
+                        <nav class="gnb-third">
+                          <ul class="gnb-sub-list">
+                            <li class="sub-item">
+                              <a href="#">Albania</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Armenia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Austria</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Azerbaijan</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Belarus</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Belgium</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Bosnia and Herzegovina</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Bulgaria</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Croatia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Cyprus</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Czech Republic</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Denmark</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Estonia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Finland</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">France</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Georgia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Germany</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Greece</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Hungary</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Iceland</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Italy</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Latvia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Lithuania</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Macedonia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Malta</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Moldova</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Montenegro</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Netherlands</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Norway</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Poland</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Portugal</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Romania</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Russia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Serbia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Slovakia</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Slovania</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Spain</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Sweden</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Switzerland</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Turkey</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Ukraine</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">United Kingdom</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </li>
+                      <li class="sub-item">
+                        <div class="sub-item__box">
+                          <span class="sub-item__title">Special Sales</span>
+                          <span class="next-arrow"><img src="img/header/next-arrow.png" alt="next"></span>
+                        </div>
+                        <nav class="gnb-third">
+                          <ul class="gnb-sub-list">
+                            <li class="sub-item">
+                              <a href="#">Armoured Cars</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Diplomat</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Military</a>
+                            </li>
+                            <li class="sub-item">
+                              <a href="#">Police</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+              </ul>
+              <ul class="gnb-sns">
+                <li>
+                  <a href="#">
+                    <img src="img/header/Facebook.png" alt="facebook">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/header/Instagram.png" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/header/Youtube.png" alt="youtube">
+                  </a>
+                </li>
+              </ul>
+              <div class="mob-util">
+                <a href="#">
+                  Find a Dealer
+                </a>
+                <a href="#">
+                  My Volvo
+                </a>
+              </div>
+            </div>
+          </nav>
+          <div class="gnb-bg"></div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__hero-banner">
+      <div class="hero-banner">
+        <div class="hero-banner__inner">
+          <div class="hero-banner__title">
+            <h4>Volvo C40 Recharge Pure Electric</h4>
+            <h2>ALL ELECTRIC. <span>ALL VOLVO.</span></h2>
+          </div>
+          <div class="hero-banner__link">
+            <a href="details.html">더 알아보기</a>
+            <a href="#">시승신청</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main__inner">
+      <div class="main__container">
+        <section class="main__second-banner">
+          <div class="second-banner">
+            <div class="video-box">
+              <video autoplay muted loop class="second-banner__video">
+                <source src="video/recharge-hero-video-21_9_mp4.mp4">
+              </video>
+              <button class="video-btn bo_n">
+                <img src="img/main/pause_black.png" alt="pause" class="video-btn__pause">
+                <img src="img/main/play_black.png" alt="play" class="video-btn__play">
+              </button>
+            </div>
+            <div class="second-banner__inner">
+              <div class="second-banner__title">
+                <h2>Elevate your drive <span>with electrification</span></h2>
+                <p>소유 비용, 충전, 온라인 구매 또는 구독 방법을 포함하여<br />당사의 전기 자동차에 대해 자세히 알아보십시오.</p>
+              </div>
+              <div class="second-banner__linkBox">
+                <a href="#" class="second-banner__link">더 알아보기<span></span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="boardWrap">
+          <div class="board board-bc1">
+            <div class="board__imgBox">
+              <img src="img/main/xc40-pe-board_img.jpg" alt="pure electric">
+            </div>
+            <div class="board__boxWrap">
+              <div class="board__textBox">
+                <h3>Pure Electric</h3>
+                <p>볼보의 순수 전기 자동차에 대해 <span>자세히 알아보십시오.</span></p>
+              </div>
+              <div class="board__linkBox">
+                <a href="#" class="board-l-bc1">자세히 알아보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="board board-bc1">
+            <div class="board__imgBox">
+              <img src="img/main/xc90-ph-board_img.jpg" alt="plug in hybrids">
+            </div>
+            <div class="board__boxWrap">
+              <div class="board__textBox">
+                <h3>Plug in Hybrids</h3>
+                <p>볼보의 플러그인 하이브리드 자동차에 대해 <span>자세히 알아보십시오.</span></p>
+              </div>
+              <div class="board__linkBox">
+                <a href="#" class="board-l-bc1">자세히 알아보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="board board-bc1">
+            <div class="board__imgBox">
+              <img src="img/main/s90-mh-board_img.jpg" alt="mlid hybrids">
+            </div>
+            <div class="board__boxWrap">
+              <div class="board__textBox">
+                <h3>Mild Hybrids</h3>
+                <p>볼보의 마일드 하이브리드 자동차에 대해 <span>자세히 알아보십시오.</span></p>
+              </div>
+              <div class="board__linkBox">
+                <a href="#" class="board-l-bc1">자세히 알아보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="board board-bc2">
+            <div class="board__imgBox">
+              <img src="img/main/aboutvolvo-board_img.png" alt="about volvo">
+            </div>
+            <div class="board__boxWrap">
+              <div class="board__textBox">
+                <h3>About Volvo</h3>
+                <p>볼보에 대해 자세히 알아보십시오.</p>
+              </div>
+              <div class="board__linkBox">
+                <a href="#" class="board-l-bc2">자세히 알아보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="board board-bc2">
+            <div class="board__imgBox">
+              <img src="img/main/certified-board_img.jpg" alt="certified">
+            </div>
+            <div class="board__boxWrap">
+              <div class="board__textBox">
+                <h3>Certified for every moment</h3>
+                <p>가장 중요한 순간에 볼보에서 기대하는 안전.</p>
+              </div>
+              <div class="board__linkBox">
+                <a href="#" class="board-l-bc2">자세히 알아보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="board board-bc2">
+            <div class="board__imgBox">
+              <img src="img/main/covid-board_img.png" alt="safety">
+            </div>
+            <div class="board__boxWrap">
+              <div class="board__textBox">
+                <h3>Your safety is our number one priority</h3>
+                <p>볼보자동차와 볼보 판매점은 <span>도울 준비가 되어 있습니다.</span></p>
+              </div>
+              <div class="board__linkBox">
+                <a href="#" class="board-l-bc2">자세히 알아보기</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="third-banner">
+          <div class="third-banner__inner">
+            <div class="third-banner__textBox">
+              <h3>시승신청</h3>
+              <p>다이내믹하고 당당한 존재감을 자랑하는 <span>볼보자동차를 지금 만나보세요!</span></p>
+            </div>
+            <div class="third-banner__linkBox">
+              <a href="#">신청하기</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <ul class="footer-link clearfix">
+        <li>
+          <a href="#">쿠키</a>
+        </li>
+        <li>
+          <a href="#">법적고지사항</a>
+        </li>
+        <li>
+          <a href="#">개인정보처리방침</a>
+        </li>
+      </ul>
+      <p>Copyright &#169; 2022 Volvo Car Corporation <span>(또는 계열사 또는 라이센스 제공자)</span></p>
+      <p>본 사이트는 Chrome 브라우저에 최적화되어 있습니다.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

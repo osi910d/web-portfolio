@@ -1,0 +1,720 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body.on {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bo_n {
+  border: none;
+  outline: none;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #FAFAFA;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.header__container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.models-box {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.models-box>span {
+  font-family: 'volvo-novum', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+.models-box>span:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.models-nav {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  left: 0;
+  top: 70px;
+  z-index: 9;
+  box-sizing: border-box;
+  padding: 20px 0px;
+  display: none;
+}
+
+.models-nav__close {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.models-nav__close>img {
+  width: 100%;
+}
+
+.models-nav__close:hover {
+  transform: scale(1.1);
+}
+
+.models-nav__inner {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.models-list {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+  border-right: 2px solid #f0f0f0;
+  font-family: 'volvo-novum', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.models-list>li {
+  padding: 10px 20px;
+  color: #9b9b9b;
+  cursor: pointer;
+}
+
+.models-list>li.on {
+  color: #000;
+}
+
+.models-sub-list {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding-left: 5%;
+  display: none;
+}
+
+.models-sub-list.on {
+  display: block;
+}
+
+.models-sub-list>li {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.models-sub-list>li>span {
+  color: #3669B6;
+}
+
+.models-car-list {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+}
+
+.models-car-list>li {
+  width: 25%;
+  margin-right: 7%;
+}
+
+.models-car-list>li>a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.models-car-list>li>a:hover {
+  background-color: rgba(255, 212, 212, 0.2);
+}
+
+.electric-icon {
+  width: 10%;
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+
+.models-car-list span {
+  display: block;
+  padding-left: 10px;
+}
+
+.car-name {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.car-price {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.car-img {
+  width: 100%;
+}
+
+.models-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 7;
+}
+
+.models-bg.on {
+  top: 70px;
+  display: block;
+}
+
+.logo {
+  width: 70%;
+  height: 100%;
+}
+
+.logo__link {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo__link>img {
+  width: 100%;
+}
+
+.util-list {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.util-list>li {
+  padding: 0px 10px;
+}
+
+.util-list>li:nth-child(3) {
+  padding-right: 0;
+}
+
+.util-list a {
+  display: block;
+}
+
+.util-list>li>a>img,
+.util-list>li>img {
+  width: 25px;
+  cursor: pointer;
+  display: block;
+}
+
+.gnb {
+  position: absolute;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  font-family: 'volvo-novum', Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 9;
+}
+
+.gnb-box {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+.gnb__top-area {
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.gnb-title {
+  display: none;
+  font-weight: 500;
+}
+
+.gnb-title.on {
+  display: block;
+}
+
+.gnb-logo {
+  width: 100px;
+  display: none;
+}
+
+.gnb-logo.on {
+  display: block;
+}
+
+.gnb__close-btn,
+.gnb__prev-btn {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.gnb .gnb__prev-btn {
+  padding: 5px;
+  display: none;
+}
+
+.gnb__prev-btn.on {
+  display: block;
+}
+
+.gnb__close-btn:hover,
+.gnb__prev-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gnb__close-btn>img,
+.gnb__prev-btn>img {
+  width: 100%;
+}
+
+.gnb-list,
+.gnb-site {
+  width: 100%;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.gnb-item {
+  font-weight: 500;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.gnb-link {
+  padding: 5% 7.5%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.gnb-item__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 7.5%;
+  width: 85%;
+  cursor: pointer;
+}
+
+.gnb-list>li:hover,
+.gnb-site>li:hover,
+.sub-item:hover {
+  background-color: #f3f3f3;
+}
+
+.next-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.next-arrow>img {
+  width: 100%;
+}
+
+.gnb-site__title {
+  font-size: 0.875rem;
+  width: 100%;
+  color: rgb(104, 104, 104);
+}
+
+.gnb-sns {
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+.gnb-sns>li {
+  margin-right: 10px;
+}
+
+.gnb-sns img {
+  width: 50px;
+}
+
+.gnb-sub {
+  position: absolute;
+  top: 0px;
+  right: -400px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  display: none;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.gnb-sub.on {
+  display: block;
+}
+
+.gnb-sub-list {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.gnb-sub-list>li {
+  width: 100%;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 10px 30px;
+  color: #9b9b9b;
+}
+
+.sub-item>a {
+  width: 85%;
+  padding: 3.75% 7.5%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sub-item__box {
+  width: 85%;
+  padding: 3.75% 7.5%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.gnb-third {
+  position: absolute;
+  top: 0px;
+  right: -400px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  display: none;
+  font-weight: 500;
+  font-size: 1.25rem;
+  overflow-y: auto;
+}
+
+.gnb-third.on {
+  display: block;
+}
+
+.gnb-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 7;
+}
+
+.gnb-bg.on {
+  display: block;
+}
+
+.mob-util {
+  width: 100%;
+  display: none;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 40px 0px 20px 0px;
+}
+
+.mob-util>a {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fff2f2;
+  line-height: 38px;
+  text-align: center;
+}
+
+.mob-util>a:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+/* 푸터 */
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #FAFAFA;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  color: #8f8f8f;
+}
+
+.footer__inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-link {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.footer-link>li {
+  float: left;
+}
+
+.footer-link>li:not(:nth-child(3)) {
+  margin-right: 20px;
+}
+
+.footer-link>li>a {
+  color: #8f8f8f;
+}
+
+
+
+
+
+
+/* 키프레임 */
+.slide-top {
+  -webkit-animation: slide-top 2s linear infinite both;
+  animation: slide-top 2s linear infinite both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+/* 반응형 */
+@media screen and (max-width:1300px) {
+  .models-nav__inner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .models-nav__inner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .models-nav__inner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:900px) {
+
+  .util-list__map,
+  .util-list__account {
+    display: none;
+  }
+
+  .mob-util {
+    display: flex;
+  }
+
+  .hero-banner__title>h2>span {
+    display: block;
+  }
+
+  .models-list {
+    width: 25%;
+    padding-left: 2%;
+  }
+
+  .models-sub-list {
+    width: 75%;
+  }
+
+  .models-car-list {
+    flex-direction: column;
+  }
+
+  .models-car-list>li {
+    width: 30%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .footer__inner {
+    font-size: 0.875rem;
+  }
+
+  .models-car-list>li {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .footer__inner {
+    font-size: 0.875rem;
+  }
+
+  .models-list {
+    width: 30%;
+  }
+
+  .models-sub-list {
+    width: 70%;
+  }
+
+  .models-car-list>li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .footer__inner>p {
+    font-size: 0.75rem;
+  }
+
+  .footer__inner>p>span {
+    display: block;
+    text-align: center;
+  }
+
+  .models-list {
+    width: 37%;
+    padding-left: 0;
+  }
+
+  .models-sub-list {
+    width: 63%;
+  }
+
+  .models-car-list>li {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .gnb {
+    width: 100%;
+  }
+
+  .models-box {
+    width: 20%;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .util-list {
+    width: 20%;
+  }
+}

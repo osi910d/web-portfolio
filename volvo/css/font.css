@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'volvo-broad';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../font/volvo-broad.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'volvo-novum';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../font/volvo-novum-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'volvo-novum';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../font/volvo-novum-semi-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'volvo-novum';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../font/volvo-novum-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'volvo-novum';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../font/volvo-novum-medium.woff2") format("woff2");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
