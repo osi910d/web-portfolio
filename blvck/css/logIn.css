@@ -1,0 +1,130 @@
+#main {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    font-family: 'MavenPro';
+    font-style: normal;
+}
+
+.login-wrap {
+    width: 100%;
+    height: auto;
+}
+
+.login-container {
+    width: 320px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.login-container .login-title {
+    width: 320px;
+    height: 84px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-title h2 {
+    font-weight: 500;
+    font-size: 2.25rem;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+}
+
+.login-title img {
+    margin: 0 auto;
+}
+
+.login-input {
+    width: 320px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.login-input form {
+    width: 100%;
+    height: 100%;
+
+}
+
+.login-wrap input {
+    width: 320px;
+    height: 40px;
+    border: 2px solid #cacccc;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.login-wrap label,
+.login-wrap input {
+    display: block;
+}
+
+.input::placeholder {
+    color: #cacccc;
+    font-family: 'MavenPro';
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+input::-webkit-input-placeholder {
+    color: #cacccc;
+    font-family: 'MavenPro';
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.login-wrap label {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.e-mail {
+    margin-bottom: 20px;
+}
+
+.password {
+    margin-bottom: 80px;
+}
+
+.login-wrap .login-btn {
+    width: 320px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.login-btn input[type=submit] {
+    background-color: #000;
+    color: #fff;
+    font-family: 'MavenPro';
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-bottom: 5px solid #3b3b3b;
+    padding: 0;
+}
+
+.login-btn input[type=submit]:hover {
+    transform: translateY(2px);
+}
+
+.signup-link p {
+    font-size: 0.625rem;
+    float: right;
+    margin-right: 5px;
+}
+
+.signup-link p a {
+    color: #4a65ee;
+}
+
+.signup-link p a:hover {
+    text-decoration: underline;
+}

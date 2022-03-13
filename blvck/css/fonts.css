@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'PPEditorialNew';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/otf/PPEditorialNew-Ultralight.otf") format("opentype");
+  src: url("../fonts/ttf/PPEditorialNew-Ultralight.ttf") format("truetype");
+  src: url("../fonts/woff/PPEditorialNew-Ultralight.woff") format("woff");
+  src: url("../fonts/woff2/PPEditorialNew-Ultralight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'PPEditorialNew';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/otf/PPEditorialNew-Regular.otf") format("opentype");
+  src: url("../fonts/ttf/PPEditorialNew-Regular.ttf") format("truetype");
+  src: url("../fonts/woff/PPEditorialNew-Regular.woff") format("woff");
+  src: url("../fonts/woff2/PPEditorialNew-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'PPEditorialNew';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/otf/PPEditorialNew-Ultrabold.otf") format("opentype");
+  src: url("../fonts/ttf/PPEditorialNew-Ultrabold.ttf") format("truetype");
+  src: url("../fonts/woff/PPEditorialNew-Ultrabold.woff") format("woff");
+  src: url("../fonts/woff2/PPEditorialNew-Ultrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'PPEditorialNew';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/otf/PPEditorialNew-UltralightItalic.otf") format("opentype");
+  src: url("../fonts/ttf/PPEditorialNew-UltralightItalic.ttf") format("truetype");
+  src: url("../fonts/woff/PPEditorialNew-UltralightItalic.woff") format("woff");
+  src: url("../fonts/woff2/PPEditorialNew-UltralightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'PPEditorialNew';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/otf/PPEditorialNew-Italic.otf") format("opentype");
+  src: url("../fonts/ttf/PPEditorialNew-Italic.ttf") format("truetype");
+  src: url("../fonts/woff/PPEditorialNew-Italic.woff") format("woff");
+  src: url("../fonts/woff2/PPEditorialNew-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'PPEditorialNew';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/otf/PPEditorialNew-UltraboldItalic.otf") format("opentype");
+  src: url("../fonts/ttf/PPEditorialNew-UltraboldItalic.ttf") format("truetype");
+  src: url("../fonts/woff/PPEditorialNew-UltraboldItalic.woff") format("woff");
+  src: url("../fonts/woff2/PPEditorialNew-UltraboldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/otf/MavenPro-Regular.otf") format("opentype");
+  src: url("../fonts/ttf/MavenPro-Regular.ttf") format("truetype");
+  src: url("../fonts/woff/MavenPro-Regular.woff") format("woff");
+  src: url("../fonts/woff2/MavenPro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/otf/MavenPro-Medium.otf") format("opentype");
+  src: url("../fonts/ttf/MavenPro-Medium.ttf") format("truetype");
+  src: url("../fonts/woff/MavenPro-Medium.woff") format("woff");
+  src: url("../fonts/woff2/MavenPro-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/otf/MavenPro-SemiBold.otf") format("opentype");
+  src: url("../fonts/ttf/MavenPro-SemiBold.ttf") format("truetype");
+  src: url("../fonts/woff/MavenPro-SemiBold.woff") format("woff");
+  src: url("../fonts/woff2/MavenPro-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/otf/MavenPro-Bold.otf") format("opentype");
+  src: url("../fonts/ttf/MavenPro-Bold.ttf") format("truetype");
+  src: url("../fonts/woff/MavenPro-Bold.woff") format("woff");
+  src: url("../fonts/woff2/MavenPro-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/otf/MavenPro-ExtraBold.otf") format("opentype");
+  src: url("../fonts/ttf/MavenPro-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/woff/MavenPro-ExtraBold.woff") format("woff");
+  src: url("../fonts/woff2/MavenPro-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/otf/MavenPro-ExtraBold.otf") format("opentype");
+  src: url("../fonts/ttf/MavenPro-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/woff/MavenPro-ExtraBold.woff") format("woff");
+  src: url("../fonts/woff2/MavenPro-ExtraBold.woff2") format("woff2");
+}

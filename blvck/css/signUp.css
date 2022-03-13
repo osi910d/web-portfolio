@@ -1,0 +1,278 @@
+#main {
+  width: 100%;
+  height: 900px;
+  font-family: 'MavenPro';
+  font-style: normal;
+  position: relative;
+}
+
+.signUp-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.banner-container {
+  width: 50%;
+  height: 480px;
+}
+
+.signUp-container {
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  padding-right: 100px;
+}
+
+.signUp-banner {
+  width: 95%;
+  height: 480px;
+  margin-right: 40px;
+  background-image: url('../img/banner/signUp-banner.png');
+  background-repeat: no-repeat;
+  background-position: -200px center;
+}
+
+.title {
+  width: 340px;
+  height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.title h2 {
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  width: 223px;
+  height: 18px;
+  margin: 0 auto;
+}
+
+.sub-title p {
+  font-size: 1rem;
+  float: left;
+}
+
+.sub-title img {
+  float: left;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.input-wrap {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.input-wrap label,
+.input-wrap input {
+  display: block;
+}
+
+.input-wrap label {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.input-wrap input {
+  width: 320px;
+  height: 40px;
+  border: 2px solid #cacccc;
+  border-radius: 10px;
+  outline: none;
+  background-color: transparent;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.input-wrap>form>div {
+  margin-bottom: 20px;
+}
+
+.input::placeholder {
+  color: #cacccc;
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+input::-webkit-input-placeholder {
+  color: #cacccc;
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+.password span {
+  font-size: 0.625rem;
+  margin-left: 5px;
+  color: #676767;
+}
+
+.input-wrap .c-password {
+  margin-bottom: 30px;
+}
+
+.input-wrap .checkbox {
+  width: 285px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+input[type=checkbox] {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #cacccc;
+  outline: none;
+  cursor: pointer;
+  filter: invert(0%) hue-rotate(211deg) brightness(1.7);
+}
+
+.checkbox p {
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  margin-bottom: 2px;
+}
+
+.checkbox p span {
+  color: #4a65ee;
+  cursor: pointer;
+}
+
+.checkbox p span:hover {
+  text-decoration: underline;
+}
+
+.input-wrap .join {
+  width: 320px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.join input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-bottom: 5px solid #3b3b3b;
+  padding: 0;
+}
+
+.join input[type=submit]:hover {
+  transform: translateY(2px);
+}
+
+.login-link p {
+  font-size: 0.625rem;
+  float: right;
+  margin-right: 5px;
+}
+
+.login-link p a {
+  color: #4a65ee;
+}
+
+.login-link p a:hover {
+  text-decoration: underline;
+}
+
+.tos-wrap {
+  width: 50%;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  border-radius: 10px 10px 30px 10px;
+  /* border-bottom-right-radius: 20px; */
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: none;
+  z-index: 99;
+}
+
+.tos-title {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  border-bottom-right-radius: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+.tos-container {
+  width: 100%;
+  height: 750px;
+  overflow-y: scroll;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.tos-btn {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-container {
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.tos-btn button {
+  width: 150px;
+  height: 60px;
+  font-family: 'MavenPro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  letter-spacing: 0.025rem;
+  cursor: pointer;
+}
+
+.tos-btn button:hover {
+  transform: translateY(2px);
+}
+
+.tos-btn .decline-btn {
+  background-color: #cacccc;
+  color: #000;
+  border-bottom: 5px solid #747474;
+}
+
+.tos-btn .agree-btn {
+  background-color: #000;
+  color: #fff;
+  border-bottom: 5px solid #3b3b3b;
+}
