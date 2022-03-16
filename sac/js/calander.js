@@ -28,7 +28,7 @@ $(function () {
     if ($(this).index() == 3) {
       if ($sbOn.index() < $sbLast.index()) {
         $sbOn.next().addClass('on');
-        $sbOn.removeClass('on')
+        $sbOn.removeClass('on');
         month++;
         if (month == 13) {
           month = 1;
